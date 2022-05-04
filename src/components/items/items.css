@@ -36,3 +36,11 @@ main {
   box-shadow: 1px 1px 5px black;
 
 }
+.orders-link {
+  text-align: center;
+  color: white;
+  background: black;
+  font-size: 2rem;
+  width: 90vw;
+  border-radius: 30px;
+}

@@ -23,6 +23,7 @@ const Items = () => {
         <span className='price'>$10</span>
       </span>
     </Link>
+    <Link to='/sign-in' className='orders-link'>Orders</Link>
   </main>
 }
 export default Items;

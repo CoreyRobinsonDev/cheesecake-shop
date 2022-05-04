@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 import Axios from 'axios';
 import './orderForm.css'
 
@@ -41,7 +42,7 @@ const OrderForm = ({product}) => {
       <textarea className="notes" value={notes} onChange={(e) => setNotes(e.target.value)}></textarea>
       <button type='submit' className='order-btn'>Place Order</button>
     </form>
-  
+    <Link to='/' className='back-btn'>Back</Link>
   </section>
 }
 export default OrderForm;
