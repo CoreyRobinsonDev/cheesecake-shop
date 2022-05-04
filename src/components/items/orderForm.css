@@ -4,6 +4,7 @@
   align-items: center;
   background: var(--off-white);
   margin-top: 3rem;
+  border-bottom: 2px dotted;
 }
 .order-msg {
   opacity: 0;
@@ -19,11 +20,13 @@
   width: 100%;
   height: 20rem;
   object-fit: cover;
+  border-bottom: 2px dotted;
 }
 .title {
   text-align: center;
   font-weight: normal;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
+  padding: 1rem;
 }
 .form {
   display: flex;

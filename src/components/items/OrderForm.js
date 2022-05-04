@@ -18,19 +18,21 @@ const OrderForm = ({product}) => {
       : 'Cheesecake Sundae'
 
   const handleSubmit = () => {
+    setIsPending(true)
     Axios.post('http://localhost:3001/order', {
       name,
       quantity: qty,
       notes,
       flavor: product,
       hasPaid: false
-    }).then((res) => {
-      setIsPending(true);
     })
+    setTimeout(() => {
+      setIsPending(false)
+    }, 5000)
   }
   
   return <section className='order-container'>
-    <span className='order-msg' style={{opacity: isPending ? 1 : 0, transition: 'opacity 300ms ease-in-out'}}>Order Submitted!</span>
+    <span className='order-msg' style={{opacity: isPending ? 1 : 0, transition: 'opacity 500ms ease-in-out'}}>Order Submitted!</span>
     <img className='img' src={picture} alt='' />
     <h3 className='title'>{title}</h3>
     <form onSubmit={handleSubmit} className='form'>  
