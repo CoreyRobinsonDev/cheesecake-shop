@@ -1,0 +1,38 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+.strawberry, .oreo, .sundae {
+  position: relative;
+}
+.tags-container {
+  display: flex;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 1.5rem;
+  color: white;
+}
+.price {
+  padding: 0 1rem;
+  margin-left: 1rem;
+  color: black;
+  background: white;
+  border-radius: 30px;
+}
+.tag {
+  padding: 0 1rem;
+  background: black;
+  border-radius: 30px;
+}
+.link-img {
+  width: 90vw;
+  height: 40rem;
+  object-fit: cover;
+  margin: 1rem;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px black;
+
+}

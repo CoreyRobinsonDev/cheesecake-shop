@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;700&family=Oleo+Script+Swash+Caps:wght@400;700&display=swap');
+
+html {  
+		box-sizing: border-box;   
+		font-size: 100%;
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+*, *:before, *:after {  
+		box-sizing: inherit;
+		text-decoration: none;
+		margin: 0;  
+		padding: 0;
+}
+button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+  margin: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+:root {
+	--off-white: #f7f7f7;
+}
