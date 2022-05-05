@@ -5,6 +5,7 @@
   background: var(--off-white);
   margin-top: 3rem;
   border-bottom: 1px dotted;
+  height: 100%;
 }
 .order-msg {
   opacity: 0;
@@ -31,8 +32,8 @@
 .form {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  height: 100%;
+  justify-content: space-evenly;
+  height: 60vh;
 }
 .quantity {
   width: 90vw;

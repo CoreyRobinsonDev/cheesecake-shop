@@ -25,10 +25,12 @@ const OrderForm = ({product}) => {
       notes,
       flavor: product,
       hasPaid: false
-    })
-    setTimeout(() => {
+    }).then(
+     setTimeout(() => {
       setIsPending(false)
-    }, 5000)
+     }, 8000)
+
+    )
   }
   
   return <section className='order-container'>
@@ -39,9 +41,9 @@ const OrderForm = ({product}) => {
       <label className='quantity-label'>Quantity</label>
       <input className='quantity' type='number' value={qty} onChange={(e) => setQty(e.target.value)} required/>
       <label className='name-label'>Name</label>
-      <input className="name" type='text' value={name} onChange={(e) => setName(e.target.value)} required focus/>
+      <input className="name" type='text' value={name} onChange={(e) => setName(e.target.value)} required />
       <label className="notes-label">Notes (optional)</label>
-      <textarea className="notes" value={notes} onChange={(e) => setNotes(e.target.value)}></textarea>
+      <textarea focus className="notes" value={notes} onChange={(e) => setNotes(e.target.value)}></textarea>
       <button type='submit' className='order-btn'>Place Order</button>
     </form>
     <Link to='/' className='back-btn'>Back</Link>
