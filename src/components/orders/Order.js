@@ -53,7 +53,7 @@ const Order = ({ name, flavor, qty, hasPaid, notes, id }) => {
       <button className='edit-btn-icon' onClick={showButtons}><FiEdit3></FiEdit3></button>
     </div>
     <p className='customer-notes'>{notes}</p>
-    <span>
+    <span className='edit-btn-container'>
       <input type='text' placeholder={name} value={nameChange} onChange={(e) => setNameChange(e.target.value)} className='edit-name' style={{display: isEdit ? 'inline': 'none'}} />
       <input type='text' placeholder={flavor} value={flavorChange} onChange={(e) => setFlavorChange(e.target.value)} className='edit-flavor' style={{display: isEdit ? 'inline': 'none'}} />
       <input type='text' placeholder={qty} value={qtyChange} onChange={(e) => setQtyChange(e.target.value)} style={{display: isEdit ? 'inline': 'none'}} className='edit-qty' />
