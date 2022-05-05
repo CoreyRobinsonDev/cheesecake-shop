@@ -19,7 +19,7 @@ const OrderForm = ({product}) => {
 
   const handleSubmit = () => {
     setIsPending(true)
-    Axios.post('http://localhost:3001/order', {
+    Axios.post('https://cheesecake-shop.herokuapp.com/order', {
       name,
       quantity: qty,
       notes,

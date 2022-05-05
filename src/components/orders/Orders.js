@@ -14,11 +14,10 @@ const Orders = () => {
   const adminPassword = process.env.REACT_APP_PASSWORD;
   
   useEffect(() => {
-    Axios.get('http://localhost:3001/orders').then((res) => {
+    Axios.get('https://cheesecake-shop.herokuapp.com/orders').then((res) => {
       setOrders(res.data);
     })
   }, [])
-  
   const handleSubmit = () => {
     if (username === adminUser && password === adminPassword) {
       setIsSignedIn(true)  
@@ -36,8 +35,10 @@ const Orders = () => {
       </form>
       <Link to='/' className='back-btn'>Back</Link>
       {redirect}
+      
     </section>
   }
+
  
   return <section className='orders-container'>
     <Link to='/' className='back-btn'>Back</Link>

@@ -6,6 +6,7 @@ header {
   width: 100%;
   z-index: 1;
   background-color: white;
+  border-bottom: 1px dotted;
 }
 .head {
   color: black;
