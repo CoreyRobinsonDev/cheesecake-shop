@@ -3,10 +3,9 @@ import { Route, Switch } from 'react-router-dom';
 
 import Header from '../components/header/Header';
 import Items  from '../components/items/Items';
-import Footer from '../components/footer/Footer';
-import './App.css';
 import OrderForm from '../components/items/OrderForm';
 import Orders from '../components/orders/Orders';
+import './App.css';
 
 const App = () => {
   return <>
@@ -24,7 +23,6 @@ const App = () => {
       </Route>
       <Route path='/orders' component={Orders} />
     </Switch>
-   <Footer />
   </>
 }
 

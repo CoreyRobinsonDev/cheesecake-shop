@@ -42,5 +42,6 @@ main {
   background: black;
   font-size: 2rem;
   width: 90vw;
+  margin-bottom: 2rem;
   border-radius: 30px;
 }

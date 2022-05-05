@@ -39,7 +39,7 @@ const OrderForm = ({product}) => {
       <label className='quantity-label'>Quantity</label>
       <input className='quantity' type='number' value={qty} onChange={(e) => setQty(e.target.value)} required/>
       <label className='name-label'>Name</label>
-      <input className="name" type='text' value={name} onChange={(e) => setName(e.target.value)} required/>
+      <input className="name" type='text' value={name} onChange={(e) => setName(e.target.value)} required focus/>
       <label className="notes-label">Notes (optional)</label>
       <textarea className="notes" value={notes} onChange={(e) => setNotes(e.target.value)}></textarea>
       <button type='submit' className='order-btn'>Place Order</button>
