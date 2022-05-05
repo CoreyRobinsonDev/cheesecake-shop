@@ -76,6 +76,8 @@
   border-radius: 10px;
   padding: 1rem;
   margin: .5rem;
+  color: white;
+
 }
 .customer-info {
   display: flex;
@@ -119,4 +121,18 @@
   border: none;
   border-radius: 10px;
   box-shadow: 1px 1px 2px inset;
+}
+
+.total-container {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px dotted;
+  border-radius: 10px;
+}
+.total-strawberry, .total-oreo, .total-sundae, .total, .net-income {
+  display: flex;
+  justify-content: space-between;
 }

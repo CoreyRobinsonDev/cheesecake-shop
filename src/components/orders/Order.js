@@ -44,7 +44,7 @@ const Order = ({ name, flavor, qty, hasPaid, notes, id }) => {
   }
 
   if (isDeleted) return '';
-  return <div className='customer-order-container' style={{background: isPaid ? 'rgba(0, 255, 0, .5)': 'rgba(255, 0, 0, .5)'}}>
+  return <div className='customer-order-container' style={{background: isPaid ? 'rgba(56, 107, 45)': 'rgba(158, 1, 7)'}}>
     <button className='pay-btn' onClick={handlePay}><FaMoneyBillWave></FaMoneyBillWave></button>
     <div className='customer-info'>
       <h3 className='customer-name'>{nameChange}</h3>
