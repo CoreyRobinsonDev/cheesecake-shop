@@ -1,7 +1,6 @@
 .sign-in-container {
   width: 100%;
   height: 30rem;
-  margin-top: 5rem;
   padding: 3rem;
   border-radius: 10px;
   border: 2px dotted;
@@ -129,7 +128,7 @@
   width: 90vw;
   padding: 1rem;
   margin: 1rem;
-  border: 1px dotted;
+  border: 2px dotted;
   border-radius: 10px;
 }
 .total-strawberry, .total-oreo, .total-sundae, .total, .net-income {
