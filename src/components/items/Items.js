@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import './items.css';
 
 const Items = () => {
-  return <main>
+  return <main id="swup" className='transition-fade'>
     <Link to='/strawberry' className='strawberry'>
       <img src='/pictures/strawberry.webp' alt='Strawberry cheesecake.' className="link-img" />
       <span className='tags-container'>

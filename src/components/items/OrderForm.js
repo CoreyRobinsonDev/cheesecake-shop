@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import Axios from 'axios';
 import './orderForm.css'
 
@@ -8,7 +8,7 @@ const OrderForm = ({product}) => {
   const [name, setName] = useState('');
   const [qty, setQty] = useState(1);
   const [notes, setNotes] = useState('');
-  const [isPending, setIsPending] = useState(false);
+  const [redirect, setRedirect] = useState(<></>);
 
   const picture = product === 'strawberry' ? '/pictures/strawberry.webp'
     : product === 'oreo' ? '/pictures/oreo.webp'
@@ -18,7 +18,6 @@ const OrderForm = ({product}) => {
       : 'Cheesecake Sundae'
 
   const handleSubmit = () => {
-    setIsPending(true)
     Axios.post('https://cheesecake-shop.herokuapp.com/order', {
       name,
       quantity: qty,
@@ -26,15 +25,12 @@ const OrderForm = ({product}) => {
       flavor: product,
       hasPaid: false
     }).then(
-     setTimeout(() => {
-      setIsPending(false)
-     }, 8000)
-
+      setRedirect(<Redirect to='/success'></Redirect>)
     )
   }
   
   return <section className='order-container'>
-    <span className='order-msg' style={{opacity: isPending ? 1 : 0, transition: 'opacity 500ms ease-in-out'}}>Order Submitted!</span>
+    {redirect}
     <img className='img' src={picture} alt='' />
     <h3 className='title'>{title}</h3>
     <form onSubmit={handleSubmit} className='form'>  
